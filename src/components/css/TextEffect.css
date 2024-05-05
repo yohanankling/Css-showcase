@@ -1,0 +1,11 @@
+.styled-text1 {
+    font-family: 'Cursive', cursive;
+    font-size: 24px;
+    color: #477bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);}
+
+.styled-text2 {
+    font-family: 'Cursive', cursive;
+    font-size: 24px;
+    color: #ff6347;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);}

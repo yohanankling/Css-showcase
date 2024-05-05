@@ -1,0 +1,8 @@
+.hover-text {
+    transition: transform 0.3s ease;
+}
+
+.hover-text:hover {
+    transform: scale(1.2);
+    color: blue;
+}
