@@ -1,13 +1,18 @@
 .sidebar {
     display: flex;
+    flex-direction: column; /* Change to column layout */
     gap: 10px;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .sidebar h2 {
     margin: 0;
-    align-self: flex-start; /* שינוי ליישור הכותרת למעלה */
+    align-self: flex-start;
+}
+
+/* Navigation Buttons */
+.sidebar-nav {
+    display: flex;
+    gap: 10px;
 }
 
 .sidebar-button {
@@ -22,4 +27,16 @@
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+
+/* Preferences Section */
+.sidebar-preferences {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sidebar-checkbox {
+    display: flex;
+    align-items: center;
 }

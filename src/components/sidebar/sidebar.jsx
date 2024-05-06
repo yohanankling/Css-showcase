@@ -9,12 +9,18 @@ function Sidebar({ setSelectedCategories }) {
     const [selectedCategories, setSelectedCategoriesInternal] = useState([]);
 
     const handleCategoryChange = (category) => {
-        const updatedCategories = selectedCategories.includes(category)
-            ? selectedCategories.filter(c => c !== category)
-            : [...selectedCategories, category];
-
-        setSelectedCategoriesInternal(updatedCategories);
-        setSelectedCategories(updatedCategories);
+        if (category === 'all') {
+                setSelectedCategoriesInternal(['text', 'hover', 'button']);
+                setSelectedCategories(['text', 'hover', 'button']);
+        }
+        else if (selectedCategories.includes(category)) {
+            setSelectedCategoriesInternal(selectedCategories.filter(c => c !== category));
+            setSelectedCategories(selectedCategories.filter(c => c !== category));
+        }
+        else {
+            setSelectedCategoriesInternal([...selectedCategories, category]);
+            setSelectedCategories([...selectedCategories, category]);
+        }
     };
 
     return (
@@ -25,7 +31,17 @@ function Sidebar({ setSelectedCategories }) {
             <button className={"sidebar-button"}> <img src={ContactImage} alt="Contact" /> </button>
 
             <h2>Categories</h2>
-            <div>
+            <div className="sidebar-button">
+                <button
+                    onClick={() => handleCategoryChange('all')}
+                    style={{
+                        backgroundColor: selectedCategories.length === 0 ? 'lightgray' : 'transparent',
+                    }}
+                >
+                    All
+                </button>
+            </div>
+            <div className="sidebar-checkbox">
                 <label>
                     <input
                         type="checkbox"
@@ -35,7 +51,7 @@ function Sidebar({ setSelectedCategories }) {
                     Text
                 </label>
             </div>
-            <div>
+            <div className="sidebar-checkbox">
                 <label>
                     <input
                         type="checkbox"
@@ -45,7 +61,7 @@ function Sidebar({ setSelectedCategories }) {
                     Hover
                 </label>
             </div>
-            <div>
+            <div className="sidebar-checkbox">
                 <label>
                     <input
                         type="checkbox"

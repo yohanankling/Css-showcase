@@ -3,10 +3,12 @@ import StylingDiv from "./showcaseDiv";
 import '../css/content.css'
 
 function Content({ selectedCategories }) {
+    const showAll = selectedCategories.length === 0;
+
     return (
         <div>
             <div className="styling-div-container">
-                {(selectedCategories.includes('text') || selectedCategories.includes('hover')) && (
+                {showAll || (selectedCategories.includes('text') || selectedCategories.includes('hover')) && (
                     <StylingDiv
                         title={"text and hover"}
                         object={"This is a styled and hover text"}
@@ -15,7 +17,7 @@ function Content({ selectedCategories }) {
                     />
                 )}
 
-                {selectedCategories.includes('text') && (
+                {showAll || selectedCategories.includes('text') && (
                     <StylingDiv
                         title={"text"}
                         object={"This is a styled text"}
@@ -24,7 +26,7 @@ function Content({ selectedCategories }) {
                     />
                 )}
 
-                {selectedCategories.includes('hover') && (
+                {showAll || selectedCategories.includes('hover') && (
                     <StylingDiv
                         title={"hover"}
                         object={"This is a hover text"}
@@ -33,7 +35,7 @@ function Content({ selectedCategories }) {
                     />
                 )}
 
-                {selectedCategories.includes('button') && (
+                {showAll || selectedCategories.includes('button') && (
                     <>
                         <StylingDiv
                             title={"grow"}
