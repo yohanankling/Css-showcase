@@ -21,16 +21,17 @@ function Sidebar({ setSelectedCategories }) {
         <div className="sidebar">
             <div className="sidebar-preferences">
                 <h2>Preferences</h2>
+                <button
+                    className="sidebar-button"
+                    onClick={() => handleCategoryChange('all')}
+                    style={{
+                        backgroundColor: selectedCategories.length === 0 ? 'lightgray' : 'transparent',
+                    }}
+                >
+                    All
+                </button>
                 <div className="checkbox-container">
-                    <button
-                        className="sidebar-button"
-                        onClick={() => handleCategoryChange('all')}
-                        style={{
-                            backgroundColor: selectedCategories.length === 0 ? 'lightgray' : 'transparent',
-                        }}
-                    >
-                        All
-                    </button>
+                    <div className={"checkbox-container"}>
                     <label>
                         <input
                             type="checkbox"
@@ -55,6 +56,7 @@ function Sidebar({ setSelectedCategories }) {
                         />
                         Button
                     </label>
+                    </div>
                 </div>
             </div>
         </div>

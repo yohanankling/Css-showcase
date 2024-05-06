@@ -2,13 +2,13 @@ import './App.css';
 import Header from "./components/header/header";
 import React, { useState } from "react";
 import Sidebar from "./components/sidebar/sidebar";
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Info from './pages/Info';
 
 function App() {
-    const [selectedCategories, setSelectedCategories] = useState([]);
+    const [selectedCategories, setSelectedCategories] = useState(['text', 'hover', 'button']);
 
     return (
         <Router>
