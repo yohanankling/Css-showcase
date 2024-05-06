@@ -5,7 +5,7 @@ import '../css/HoverEffect.css';
 import '../css/GrowEffect.css';
 import Code from "./code";
 
-function StylingDiv({ title, object, cssStyle }) {
+function StylingDiv({ title, object, cssStyle, category }) {
     const objectRef = useRef(null);
     const [showPopup, setShowPopup] = useState(false);
     const [cssRules, setCssRules] = useState('');
