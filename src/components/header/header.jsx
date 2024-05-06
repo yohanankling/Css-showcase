@@ -1,10 +1,33 @@
 import React from 'react';
 import './header.css'
+import {Link} from "react-router-dom";
+import HomeImage from "../../assets/home.png";
+import AboutImage from "../../assets/info.png";
+import ContactImage from "../../assets/contact.png";
 
 function Header() {
   return (
-      <div>
+      <div className={"header"}>
+          <div className={"header-title-div"}>
         <h1 className={"header-title"}>CSS Effects Showcase</h1>
+          </div>
+          <div className="header-nav">
+              <Link to="/">
+                  <button className="header-button">
+                      <img src={HomeImage} alt="Home" />
+                  </button>
+              </Link>
+              <Link to="/info">
+                  <button className="header-button">
+                      <img src={AboutImage} alt="About" />
+                  </button>
+              </Link>
+              <Link to="/contact">
+                  <button className="header-button">
+                      <img src={ContactImage} alt="Contact" />
+                  </button>
+              </Link>
+          </div>
       </div>
   );
 }

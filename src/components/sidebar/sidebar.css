@@ -1,42 +1,24 @@
 .sidebar {
     display: flex;
-    flex-direction: column; /* Change to column layout */
+    flex-direction: column;
     gap: 10px;
+    width: 200px;
 }
 
 .sidebar h2 {
     margin: 0;
-    align-self: flex-start;
+    text-align: center;
 }
 
-/* Navigation Buttons */
-.sidebar-nav {
-    display: flex;
-    gap: 10px;
-}
-
-.sidebar-button {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-}
-
-.sidebar-button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-/* Preferences Section */
 .sidebar-preferences {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+
 }
 
-.sidebar-checkbox {
-    display: flex;
-    align-items: center;
+.checkbox-container {
+    border: 2px solid #000000;
+    padding: 10px;
+    width: 100%;
+}
+
+.checkbox-container h2 {
 }

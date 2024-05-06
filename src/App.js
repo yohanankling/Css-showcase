@@ -25,19 +25,6 @@ function App() {
                 </div>
                 <div className={"sidebar"}>
                     <Sidebar setSelectedCategories={setSelectedCategories} />
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="/contact">Contact</Link>
-                            </li>
-                            <li>
-                                <Link to="/info">Info</Link>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
             </div>
         </Router>

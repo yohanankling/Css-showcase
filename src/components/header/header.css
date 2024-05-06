@@ -1,5 +1,31 @@
-.header-title {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-div {
     text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-    text-align: center;
     color: white;
+    margin-left: 43%;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.header-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
