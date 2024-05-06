@@ -6,12 +6,21 @@ function Content({ selectedCategories }) {
     return (
         <div>
             <div className="styling-div-container">
+                {(selectedCategories.includes('text') || selectedCategories.includes('hover')) && (
+                    <StylingDiv
+                        title={"text and hover"}
+                        object={"This is a styled and hover text"}
+                        cssStyle={"styled-text2 hover-text"}
+                        category={['text', 'hover']}
+                    />
+                )}
+
                 {selectedCategories.includes('text') && (
                     <StylingDiv
                         title={"text"}
                         object={"This is a styled text"}
                         cssStyle={"styled-text2"}
-                        category={"text"}
+                        category={['text']}
                     />
                 )}
 
@@ -20,7 +29,7 @@ function Content({ selectedCategories }) {
                         title={"hover"}
                         object={"This is a hover text"}
                         cssStyle={"hover-text"}
-                        category={"hover"}
+                        category={['hover']}
                     />
                 )}
 
@@ -30,31 +39,31 @@ function Content({ selectedCategories }) {
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={"button"}
+                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={"button"}
+                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={"button"}
+                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={"button"}
+                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={"button"}
+                            category={['button']}
                         />
                     </>
                 )}

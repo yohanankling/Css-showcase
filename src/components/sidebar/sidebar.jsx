@@ -3,18 +3,18 @@ import './sidebar.css';
 import HomeImage from '../../assets/home.png';
 import AboutImage from '../../assets/info.png';
 import ContactImage from '../../assets/contact.png';
+import { Link } from 'react-router-dom';
 
 function Sidebar({ setSelectedCategories }) {
     const [selectedCategories, setSelectedCategoriesInternal] = useState([]);
 
     const handleCategoryChange = (category) => {
-        if (selectedCategories.includes(category)) {
-            setSelectedCategoriesInternal(selectedCategories.filter(c => c !== category));
-            setSelectedCategories(selectedCategories.filter(c => c !== category));
-        } else {
-            setSelectedCategoriesInternal([...selectedCategories, category]);
-            setSelectedCategories([...selectedCategories, category]);
-        }
+        const updatedCategories = selectedCategories.includes(category)
+            ? selectedCategories.filter(c => c !== category)
+            : [...selectedCategories, category];
+
+        setSelectedCategoriesInternal(updatedCategories);
+        setSelectedCategories(updatedCategories);
     };
 
     return (
@@ -55,6 +55,20 @@ function Sidebar({ setSelectedCategories }) {
                     Button
                 </label>
             </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link to="/info">Info</Link>
+                    </li>
+                </ul>
+            </nav>
         </div>
     );
 }
