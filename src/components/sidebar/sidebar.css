@@ -1,0 +1,25 @@
+.sidebar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar h2 {
+    margin: 0;
+    align-self: flex-start; /* שינוי ליישור הכותרת למעלה */
+}
+
+.sidebar-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}

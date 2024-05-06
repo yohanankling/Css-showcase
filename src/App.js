@@ -1,7 +1,7 @@
 import './App.css';
 import Header from "./components/header/header";
 import React from "react";
-import Footer from "./components/footer/footer";
+import Sidebar from "./components/sidebar/sidebar";
 import Content from "./components/content/content";
 
 function App() {
@@ -13,9 +13,9 @@ function App() {
         <div className={"body"}>
         <Content/>
         </div>
-        <footer>
-        <Footer/>
-        </footer>
+        <div className={"sidebar"}>
+        <Sidebar/>
+        </div>
     </div>
   );
 }
