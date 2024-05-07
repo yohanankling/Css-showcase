@@ -1,0 +1,10 @@
+.contact a{
+    align-content: space-between;
+    margin-right: 20px;
+
+}
+
+.contact :hover img {
+    opacity: 0.8;
+    transform: scale(1.1);
+}

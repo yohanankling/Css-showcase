@@ -3,7 +3,6 @@ import './header.css'
 import {Link} from "react-router-dom";
 import HomeImage from "../../assets/home.png";
 import AboutImage from "../../assets/info.png";
-import ContactImage from "../../assets/contact.png";
 
 function Header() {
   return (
