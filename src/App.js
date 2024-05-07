@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Sidebar from "./components/sidebar/sidebar";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import Contact from './pages/Contact';
 import Info from './pages/Info';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
                 </header>
                 <div className={"body"}>
                     <Routes>
-                        <Route path="/contact" element={<Contact />} />
                         <Route path="/info" element={<Info />} />
                         <Route path="/" element={<Home selectedCategories={selectedCategories} />} />
                     </Routes>

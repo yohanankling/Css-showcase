@@ -22,11 +22,6 @@ function Header() {
                       <img src={AboutImage} alt="About" />
                   </button>
               </Link>
-              <Link to="/contact">
-                  <button className="header-button">
-                      <img src={ContactImage} alt="Contact" />
-                  </button>
-              </Link>
           </div>
       </div>
   );
