@@ -1,5 +1,5 @@
 import React from 'react';
-import StylingDiv from "./showcaseDiv";
+import StylingDiv from "./StylingDiv";
 import '../css/content.css'
 
 function Content({ selectedCategories }) {

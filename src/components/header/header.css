@@ -10,6 +10,21 @@
     margin-left: 43%;
 }
 
+@media (max-width: 890px) {
+    .header-title-div {
+        font-size: 0.8rem;
+    }}
+
+@media (max-width: 650px) {
+    .header-title-div {
+        font-size: 0.6rem;
+    }}
+
+@media (max-width: 520px) {
+    .header-title-div {
+        font-size: 0.5rem;
+    }}
+
 .header-nav {
     display: flex;
     flex-direction: row;
