@@ -18,9 +18,9 @@
     margin-top: auto;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 400px) {
     .stylingDiv {
-        width: 30vh;
+        width: 40vh;
     }
 }
 

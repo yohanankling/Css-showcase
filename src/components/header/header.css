@@ -1,13 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .header-title-div {
     text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
     color: white;
     margin-left: 43%;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 890px) {
@@ -23,12 +27,10 @@
 @media (max-width: 520px) {
     .header-title-div {
         font-size: 0.5rem;
-    }}
-
-.header-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    }
+    .header-nav {
+        right: 5%;
+    }
 }
 
 .header-button {
