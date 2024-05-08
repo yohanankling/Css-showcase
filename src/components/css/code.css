@@ -78,3 +78,13 @@
         width: 28vh;
     }
 }
+
+@media (max-width: 400px) {
+    .cover {
+        height: 40vh;
+        width: 40vh;
+    }
+    .cssRules {
+        width: 28vh;
+    }
+}

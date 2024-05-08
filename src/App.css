@@ -72,18 +72,33 @@ header {
   z-index: 10;
   display: none;
   border: 0px solid #f11212;
+  padding: 5px 20px;
 }
 
-@media (max-width: 400px) {
-  .sidebar {
-    display: none;
-  }
+.toggle-button:hover img {
+  filter: invert(100%);
+}
+
+@media (max-width: 499px) {
 
   .body {
     left: 10%;
   }
 
+  .sidebar {
+    left: 40%;
+  }
+
   .toggle-button {
     display: block;
   }
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+.blurred-background {
+  filter: blur(5px);
+  pointer-events: none;
 }
