@@ -1,6 +1,7 @@
 import React from 'react';
 import StylingDiv from "./StylingDiv";
 import '../css/content.css'
+import Rayman from  '../../assets/poster rayman.jpeg'
 
 function Content({ selectedCategories }) {
     const showAll = selectedCategories.length === 0;
@@ -12,7 +13,7 @@ function Content({ selectedCategories }) {
                     <StylingDiv
                         title={"text and hover"}
                         object={"This is a styled and hover text"}
-                        cssStyle={"styled-text2 hover-text"}
+                        cssStyle={"bubble-text"}
                         category={['text', 'hover']}
                     />
                 )}
@@ -22,6 +23,15 @@ function Content({ selectedCategories }) {
                         title={"text"}
                         object={"This is a styled text"}
                         cssStyle={"styled-text2"}
+                        category={['text']}
+                    />
+                )}
+
+                {showAll || selectedCategories.includes('text') && (
+                    <StylingDiv
+                        title={"text"}
+                        object={<img src={Rayman} alt={'Rayman'}/>}
+                        cssStyle={"image-3d"}
                         category={['text']}
                     />
                 )}

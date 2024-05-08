@@ -1,0 +1,27 @@
+.image-3d {  /* Assuming this is the container element */
+    width: 200px;  /* Set a width for the container */
+    height: 150px; /* Set a height for the container */
+}
+
+.image-3d img {
+    transition: all 0.3s ease;
+    width: 100%;  /* Fills the container width */
+    height: 100%; /* Fills the container height */
+}
+
+.image-3d:hover img {
+    transform: translateY(-5%) rotateX(25deg);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.image-3d:hover:after {
+    content: url('../../assets/3d rayman.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;  /* Adjust percentage based on desired size */
+    height: 70%; /* Adjust percentage based on desired size */
+    opacity: 0.7;
+    margin: 0;
+    padding: 0;
+}

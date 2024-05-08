@@ -3,6 +3,7 @@ import '../css/stylingDiv.css';
 import '../css/TextEffect.css';
 import '../css/HoverEffect.css';
 import '../css/GrowEffect.css';
+import '../css/ImageEffect.css';
 import Code from "./code";
 
 function StylingDiv({ title, object, cssStyle, category }) {
