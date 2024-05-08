@@ -1,7 +1,7 @@
 import React from 'react';
 import StylingDiv from "./StylingDiv";
 import '../css/content.css'
-import Rayman from  '../../assets/poster rayman.jpeg'
+import Rayman from  '../../assets/rayman.jpeg'
 
 function Content({ selectedCategories }) {
     const showAll = selectedCategories.length === 0;

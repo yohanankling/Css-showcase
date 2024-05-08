@@ -6,7 +6,6 @@
     background-color: papayawhip;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     position: relative;
     padding-bottom: 40px;

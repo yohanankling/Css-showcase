@@ -1,12 +1,17 @@
-.image-3d {  /* Assuming this is the container element */
-    width: 200px;  /* Set a width for the container */
-    height: 150px; /* Set a height for the container */
+.image-3d {
+    position: relative;
+    top: -20px;
+    overflow: hidden;
+    width: 90%; /* Adjust this value to increase or decrease the image width */
+    height: 100%; /* This will maintain the aspect ratio of the image */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
 .image-3d img {
+    width: 100%;
+    height: 100%;
     transition: all 0.3s ease;
-    width: 100%;  /* Fills the container width */
-    height: 100%; /* Fills the container height */
+    z-index: 1;
 }
 
 .image-3d:hover img {
@@ -14,14 +19,24 @@
     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
-.image-3d:hover:after {
-    content: url('../../assets/3d rayman.jpg');
+.image-3d::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;  /* Adjust percentage based on desired size */
-    height: 70%; /* Adjust percentage based on desired size */
-    opacity: 0.7;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/3d_rayman.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.3s ease, opacity 1.5s ease;
+    z-index: 2;
+}
+
+.image-3d:hover::before {
+    opacity: 1;
+    transform: scale(1.1);
 }
