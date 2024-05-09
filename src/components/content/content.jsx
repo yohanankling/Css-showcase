@@ -21,7 +21,7 @@ function Content({ selectedCategories }) {
                     <StylingDiv
                         title={"text"}
                         object={"This is a styled text"}
-                        cssStyle={"styled-text2"}
+                        cssStyle={"styled-text3"}
                     />
                 )}
 
