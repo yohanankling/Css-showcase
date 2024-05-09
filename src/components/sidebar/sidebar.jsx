@@ -6,8 +6,8 @@ function Sidebar({ setSelectedCategories }) {
 
     const handleCategoryChange = (category) => {
         if (category === 'all') {
-            setSelectedCategoriesInternal(['text', 'hover', 'button']);
-            setSelectedCategories(['text', 'hover', 'button']);
+            setSelectedCategoriesInternal(['text', 'hover', 'button', 'image']);
+            setSelectedCategories(['text', 'hover', 'button', 'image']);
         } else if (selectedCategories.includes(category)) {
             setSelectedCategoriesInternal(selectedCategories.filter((c) => c !== category));
             setSelectedCategories(selectedCategories.filter((c) => c !== category));
@@ -48,6 +48,14 @@ function Sidebar({ setSelectedCategories }) {
                         />
                         Hover
                     </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                checked={selectedCategories.includes('image')}
+                                onChange={() => handleCategoryChange('image')}
+                            />
+                            Image
+                        </label>
                     <label>
                         <input
                             type="checkbox"

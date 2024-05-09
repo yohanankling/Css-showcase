@@ -14,7 +14,6 @@ function Content({ selectedCategories }) {
                         title={"text and hover"}
                         object={"This is a styled and hover text"}
                         cssStyle={"bubble-text"}
-                        category={['text', 'hover']}
                     />
                 )}
 
@@ -23,16 +22,14 @@ function Content({ selectedCategories }) {
                         title={"text"}
                         object={"This is a styled text"}
                         cssStyle={"styled-text2"}
-                        category={['text']}
                     />
                 )}
 
-                {showAll || selectedCategories.includes('text') && (
+                {showAll || selectedCategories.includes('image') && (
                     <StylingDiv
                         title={"text"}
                         object={<img src={Rayman} alt={'Rayman'}/>}
                         cssStyle={"image-3d"}
-                        category={['text']}
                     />
                 )}
 
@@ -41,7 +38,6 @@ function Content({ selectedCategories }) {
                         title={"hover"}
                         object={"This is a hover text"}
                         cssStyle={"hover-text"}
-                        category={['hover']}
                     />
                 )}
 
@@ -51,31 +47,26 @@ function Content({ selectedCategories }) {
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={['button']}
                         />
                         <StylingDiv
                             title={"grow"}
                             object={"This is a growing text"}
                             cssStyle={"grow-box"}
-                            category={['button']}
                         />
                     </>
                 )}

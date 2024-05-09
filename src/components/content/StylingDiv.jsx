@@ -6,7 +6,7 @@ import '../css/GrowEffect.css';
 import '../css/ImageEffect.css';
 import Code from "./code";
 
-function StylingDiv({ title, object, cssStyle, category }) {
+function StylingDiv({ title, object, cssStyle }) {
     const objectRef = useRef(null);
     const [showPopup, setShowPopup] = useState(false);
     const [cssRules, setCssRules] = useState('');
