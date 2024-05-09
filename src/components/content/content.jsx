@@ -22,6 +22,17 @@ function Content({ selectedCategories }) {
                             object={"COLORFUL TEXT"}
                             cssStyle={"colorful_text"}
                         />
+                        <StylingDiv
+                            title={"THE WIGGLE TEXT"}
+                            object={"HYPERACTIVE"}
+                            cssStyle={"wiggle_text"}
+                        />
+
+                        <StylingDiv
+                            title={"THE FLOATING TEXT"}
+                            object={"I'M AN ELEVATOR"}
+                            cssStyle={"floating_text"}
+                        />
                     </>
                 )}
 

@@ -10,3 +10,51 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+.wiggle_text {
+    font-size: 25px;
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+.floating_text {
+    margin-top: 30%;
+    font-size: 25px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-70px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
