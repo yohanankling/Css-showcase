@@ -7,6 +7,7 @@
     text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
     color: white;
     margin-left: 40%;
+    font-size: clamp(10px, 1vw, 32px);
 }
 
 .header-nav {
@@ -14,19 +15,8 @@
     flex-direction: row;
 }
 
-@media (max-width: 890px) {
-    .header-title-div {
-        font-size: 0.8rem;
-    }}
-
-@media (max-width: 650px) {
-    .header-title-div {
-        font-size: 0.6rem;
-    }}
-
 @media (max-width: 520px) {
     .header-title-div {
-        font-size: 0.5rem;
     }
     .header-nav {
         right: 5%;

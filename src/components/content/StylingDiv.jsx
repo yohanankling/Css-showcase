@@ -2,8 +2,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import '../css/stylingDiv.css';
 import '../css/TextEffect.css';
 import '../css/HoverEffect.css';
-import '../css/GrowEffect.css';
 import '../css/ImageEffect.css';
+import '../css/LoadingEffect.css';
 import Code from "./code";
 
 function StylingDiv({ title, object, cssStyle }) {

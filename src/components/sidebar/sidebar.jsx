@@ -6,8 +6,8 @@ function Sidebar({ setSelectedCategories }) {
 
     const handleCategoryChange = (category) => {
         if (category === 'all') {
-            setSelectedCategoriesInternal(['text', 'hover', 'button', 'image']);
-            setSelectedCategories(['text', 'hover', 'button', 'image']);
+            setSelectedCategoriesInternal(['text', 'hover', 'image', 'loading']);
+            setSelectedCategories(['text', 'hover', 'image', 'loading']);
         } else if (selectedCategories.includes(category)) {
             setSelectedCategoriesInternal(selectedCategories.filter((c) => c !== category));
             setSelectedCategories(selectedCategories.filter((c) => c !== category));
@@ -56,14 +56,14 @@ function Sidebar({ setSelectedCategories }) {
                             />
                             Image
                         </label>
-                    <label>
-                        <input
-                            type="checkbox"
-                            checked={selectedCategories.includes('button')}
-                            onChange={() => handleCategoryChange('button')}
-                        />
-                        Button
-                    </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                checked={selectedCategories.includes('loading')}
+                                onChange={() => handleCategoryChange('loading')}
+                            />
+                            Loading
+                        </label>
                     </div>
                 </div>
             </div>

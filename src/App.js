@@ -8,7 +8,7 @@ import Info from './pages/Info';
 import Menu from "./assets/menu.png";
 
 function App() {
-    const [selectedCategories, setSelectedCategories] = useState(['text', 'hover', 'button', 'image']);
+    const [selectedCategories, setSelectedCategories] = useState(['text', 'hover', 'button', 'image', 'loading']);
     const [showSidebar, setShowSidebar] = useState(window.innerWidth > 500);
 
     useEffect(() => {
