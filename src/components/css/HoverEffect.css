@@ -1,8 +1,55 @@
-.hover-text {
-    transition: transform 0.3s ease;
+.hover-link {
+    background-image: linear-gradient(
+            to right,
+            #54b3d6,
+            #54b3d6 50%,
+            #fff 50%
+    );
+    font-size: 25px;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.hover-text:hover {
-    transform: scale(1.2);
-    color: blue;
+.hover-link:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-link:hover {
+    background-position: 0;
+}
+
+.hover-link:hover::before {
+    width:100%;
+}
+
+.hover-text span {
+    color: inherit;
+    text-decoration: none;
+    background:
+            linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    display: inline-block;
+}
+
+.hover-text span:hover {
+    background-size: 0 3px, 100% 3px;
 }

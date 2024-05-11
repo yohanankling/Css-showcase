@@ -104,11 +104,20 @@ function Content({ selectedCategories }) {
                 )}
 
                 {showAll || selectedCategories.includes('hover') && (
+                    <>
                     <StylingDiv
-                        title={"hover"}
-                        object={"This is a hover text"}
+                        title={"HOVER LINK"}
+                        object={"Hover this link"}
+                        cssStyle={"hover-link"}
+                    />
+                        <StylingDiv
+                        title={"HOVER THE MENU"}
+                        object={<div>
+                            <span>HOME</span>  |  <span>ABOUT US</span>  |  <span>CONTACT</span>
+                        </div>}
                         cssStyle={"hover-text"}
                     />
+                    </>
                 )}
             </div>
         </div>
