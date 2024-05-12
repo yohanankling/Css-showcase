@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# CSS Showcase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CSS Showcase is a web application built with React that allows users to explore and discover a wide range of CSS styles and designs for various HTML elements. It serves as a valuable resource for web developers, designers, and anyone interested in learning and implementing creative CSS techniques.
 
-## Available Scripts
+# Screenshots
 
-In the project directory, you can run:
+<img width="600" height="330" src="https://github.com/yohanankling/css-showcase/assets/93263233/cb78a57b-d6e9-4539-90b9-9c4ab180de4c"/>
+<img width="300" height="330" src="https://github.com/yohanankling/css-showcase/assets/93263233/db724dd6-c393-4eb8-a9e6-75b48a13ab91"/>
+<img width="600" height="330" src="https://github.com/yohanankling/css-showcase/assets/93263233/1e9891e4-eb18-40c9-a413-a6ccb811b1cb"/>
 
-### `npm start`
+https://github.com/yohanankling/css-showcase/assets/93263233/fe77b904-93c0-4d65-88b1-06655f67aa6e
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Style Gallery**: Browse through a vast collection of CSS styles categorized by element types, such as text, images, buttons, and more.
+- **Live Preview**: Instantly see how each style looks on a sample element, allowing you to quickly evaluate its suitability for your project.
+- **Code Snippet**: Access the source code for each CSS style, making it easy to copy and paste the styles into your own projects.
+- **Filtering**: Use the filtering options to narrow down the displayed styles based on categories, tags, or keywords, simplifying the process of finding the desired styles.
+- **Responsive Design**: The application is designed to be responsive and accessible across various devices and screen sizes.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- <img src="https://github.com/yohanankling/FlagsWars/assets/93263233/4619a693-40a7-41d2-8eaa-3a4cf47e56f7" width="30" height="30"> React.js
+- <img src="https://github.com/yohanankling/FlagsWars/assets/93263233/acd260e6-7354-40e7-93c6-5a603275fcb6" width="30" height="30"> JS
+- <img src="https://github.com/yohanankling/FlagsWars/assets/93263233/b83a0136-8b44-4ce9-ba3d-0f85118241e6" width="30" height="30"> CSS3
+- <img src="https://github.com/yohanankling/FlagsWars/assets/93263233/cfc062ab-7a6b-40d0-b2fc-fada37a5932b" width="30" height="30"> HTML5
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the CSS Showcase application locally, follow these steps:
 
-### `npm run eject`
+1. Clone the repository: `git clone https://github.com/yohanankling/css-showcase.git`
+2. Navigate to the project directory: `cd css-showcase`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit `http://localhost:3000` to see the application in action.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! If you find any issues or have suggestions for improvement, CSS style you want to recommend, please open an issue or submit a pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the [MIT License](LICENSE).
 
-## Learn More
+## Acknowledgments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The inspiration for some of the CSS styles in this application comes from various sources on the internet, including design showcases, tutorials, and online communities. Currently, the collection is relatively small, but it will gradually grow as I develop and discover more creative styles that can be showcased and reused.
+Feel free to explore the available styles and contribute your own by submitting a pull request. Together, we can build a comprehensive repository of CSS designs and techniques for the benefit of the web development community.
